@@ -1,0 +1,15 @@
+/* FRONT PAGE TEXT */
+#frontpagetext {
+	text-align: center; 
+	transform: translateY(170px);
+}
+
+/* ANNOUNCEMENTS */
+.announcement {
+	text-align: center;
+	background-color: #303030;
+	width: 800px;
+	height: 200px;
+	margin: auto;
+	border: 4px solid gray;
+}

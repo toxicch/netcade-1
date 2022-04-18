@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Netcade - Web Tools</title>
+    <link href="styles/gamelibrary.css" rel="stylesheet"/>
+	<link href="styles/global.css" rel="stylesheet"/>
+  </head>
+  <body>
+	<!-- NAVBAR -->
+    <div class="navbar"></div>
+
+	<div style="text-align: center; position: relative; top: 40px;">
+		<span style="font-size: 35px;">Web Tools</span>
+		<br>
+		<a href="toolpages/piped.html" class="gameblocklink" style="position: relative; bottom: 25px;">
+			<div class="gameblock" style="height: 150px; width: 250px; margin: 2px;">
+				<span class="gameblocktext" style="font-size: 22px;">Unblo‎cked YouTube</span>
+				<br>
+				<span style="font-weight: 300;">An alternative frontend for YouTube which lets you bypa‎ss restri‎cted videos.</span>
+			</div>
+		</a>
+		<a href="toolpages/pydodge.html" class="gameblocklink">
+			<div class="gameblock" style="height: 150px; width: 250px; margin: 2px;">
+				<span class="gameblocktext" style="font-size: 22px;">PyDodge Pro‎xy</span>
+				<br>
+				<span style="font-weight: 300;">A web pro‎xy written in Python that lets you access blo‎cked websites; it works with YouTube, Instagram and various others.</span>
+			</div>
+		</a>
+		<a href="toolpages/retroemu.html" class="gameblocklink">
+			<div class="gameblock" style="height: 150px; width: 250px; margin: 2px;">
+				<span class="gameblocktext" style="font-size: 22px;">Retro Emul‎ators</span>
+				<br>
+				<span style="font-weight: 300;">Download ROMs for various retro consoles and play them online with emul‎ators; includes titles from Pokemon and Zelda.</span>
+			</div>
+		</a>
+		<br>
+		<span style="font-size: 35px;">Bookmarklets</span>
+		<br>
+		<span style="font-weight: 300; width: 650px; display: inline-block;">Bookmarklets are bookmarks with pieces of JavaScript code as their URLs which can execute scripts on your current page. To add a bookmarklet, drag the box of the one you want to add into your bookmark bar, under the URL box.</span>
+		<br><br>
+		<a href="javascript:(function(){var iframe = document.createElement(`iframe`);iframe.src=`https://wintrcat.github.io/netcade/index.html`;iframe.width=window.innerWidth;iframe.height=window.innerHeight;document.body.appendChild(iframe);})();" class="gameblocklink">
+			<div class="gameblock" style="height: 150px; width: 350px; margin: 2px;">
+				<span class="gameblocktext" style="font-size: 22px;">Netcade Loader</span>
+				<br>
+				<span style="font-weight: 300;">A very important bookmarklet that loads Netcade at the bottom of your page through an iFrame. Please get this incase the site is blo‎cked!</span>
+			</div>
+		</a>
+		<a href="javascript:document.title=prompt('Netcade Tab Cloak\n\nEnter new Tab Title:');var icon=document.querySelector(`link[rel='icon']`);if (!icon) {icon = document.createElement('link');icon.rel='icon';};switch(prompt('Choose new tab icon:\n\n[1] Google Search\n[2] Google Drive\n[3] Custom URL')){case'1':icon.setAttribute('href','https://www.google.com/favicon.ico');break;case'2':icon.setAttribute('href','https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png');break;case'3':icon.setAttribute('href',prompt('Enter Custom Tab Icon URL:'));} document.head.appendChild(icon);" class="gameblocklink" style="position: relative; bottom: 25px;">
+			<div class="gameblock" style="height: 150px; width: 350px; margin: 2px;">
+				<span class="gameblocktext" style="font-size: 22px;">Tab Cloak</span>
+				<br>
+				<span style="font-weight: 300;">Changes the title and icon of your current tab to look like a website such as Google or Google Drive.</span>
+			</div>
+		</a>
+		<a href="javascript:if (window.location.toString().includes('www.youtube.com/watch?v')){window.open('https://www.youtube-nocookie.com/embed/'+window.location.toString().split('=')[1])}" class="gameblocklink" style="position: relative; bottom: 25px;">
+			<div class="gameblock" style="height: 150px; width: 350px; margin: 2px;">
+				<span class="gameblocktext" style="font-size: 22px;">YT Restriction Bypa‎ss</span>
+				<br>
+				<span style="font-weight: 300;">Use this bookmark while on a YouTube video page to bypa‎ss the restriction if it has been placed by your adminstrator.</span>
+			</div>
+		</a>
+		<a href="javascript:window.onbeforeunload = function() { return 1; };" class="gameblocklink" style="position: relative; bottom: 25px;">
+			<div class="gameblock" style="height: 150px; width: 350px; margin: 2px;">
+				<span class="gameblocktext" style="font-size: 22px;">Block GoGuar‎dian Tab Close</span>
+				<br>
+				<span style="font-weight: 300;">Run this bookmark to stop administrators on GoGuardian closing your tab. (effect only applied to tab you're on while running)</span>
+			</div>
+		</a>
+	</div>
+
+	<!-- FOOTER -->
+	<div class="footer" style="position: absolute; bottom: -50vh; width: 100%;"></div>
+	
+	<script src="scripts/commons.js"></script>
+  </body>
+</html>

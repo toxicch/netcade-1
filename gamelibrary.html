@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Netcade - Game Library</title>
+    <link href="styles/gamelibrary.css" rel="stylesheet"/>
+	<link href="styles/global.css" rel="stylesheet"/>
+  </head>
+  <body>
+	<!-- NAVBAR -->
+    <div class="navbar"></div>
+
+	<div style="text-align: center; position: relative; top: 50px;">
+		<span style="font-size: 35px;">Game Library</span>
+		<br><br>
+		<input type="text" id="gamesearchbox" placeholder="Search..."/>
+		<button id="gamesearchbutton" onclick="gameSearch();">🔎</button>
+		<button id="shufflebutton" onclick="gameSearch(true);"><span>Shuffle</span></button>
+		<br>
+		<i><span id="results" style="font-size: 13px; display: none;">Results: 0</span></i>
+	</div>
+
+	<div id="gamelibrary" style="text-align: center; position: relative; top: 80px; "></div>
+
+	<!-- FOOTER -->
+	<div class="footer" style="position: absolute; bottom: -150vh; width: 100%;"></div>
+	
+    <script src="scripts/gamelibrary.js"></script>
+	<script src="scripts/commons.js"></script>
+	<script src="scripts/util.js"></script>
+  </body>
+</html>
